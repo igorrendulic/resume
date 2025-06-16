@@ -1,2 +1,2 @@
-# resume
+# Resume
 Igor Rendulic Resume
