@@ -1,0 +1,94 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{calc}
+\usepackage{tikz}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\begin{center}
+  \tikz{
+    % force TeX’s idea of the box to that circle:
+    \useasboundingbox (-2.5cm,-2.5cm) rectangle (2.5cm,2.5cm);
+    % clip everything to the circle:
+    \clip (0,0) circle (2.5cm);
+    % place your photo at the origin:
+    \node[inner sep=0pt] (avatar.base) at (0,0)
+      {\includegraphics[width=5cm]{igor_profile.jpg}};
+  }\\[1em]
+  {\LARGE\bfseries Igor Rendulic}\\
+  Salt Lake City, Utah\\
+  \href{mailto:igor@mail.io}{igor@mail.io} \textbar\ 
+  \href{https://github.com/igorrendulic}{GitHub} \textbar\ 
+  \href{https://www.linkedin.com/in/igorrendulic}{LinkedIn}
+\end{center}
+
+\section*{Professional Summary}
+Seasoned Software Engineer with deep expertise in Machine Learning and Artificial Intelligence, specializing in Python, Go, and TypeScript. Passionate about leveraging AI-driven solutions for cybersecurity and cryptography challenges. Proven track record of designing and deploying scalable, innovative AI and ML systems recognized industry-wide for effectiveness and adoption.
+
+\section*{Technical Skills}
+\begin{itemize}
+    \item \textbf{Languages}: Python, Go, TypeScript, JavaScript, Java
+    \item \textbf{Frameworks and Tools}: Kubernetes, Docker, React, React Native, Next.js, Jest, FastAPI, Firebase, Google Cloud Platform
+    \item \textbf{Security and Cryptography}: WebAuthn, FIDO2, NaCl, JOSE, JWT, Shamir's Secret Sharing
+    \item \textbf{Databases}: CouchDB, PouchDB, BigQuery, Firebase Firestore
+    \item \textbf{AI and ML}: Deep Learning, CNNs, Large Language Models (LLM), Semantic Search, Prompt Engineering
+\end{itemize}
+
+\section*{Professional Experience}
+\textbf{Lead Software Engineer} \hfill Salt Lake City, UT\\
+\textit{Mailio} \hfill Feb 2025 -- Present
+\begin{itemize}
+    \item Designed and implemented an end-to-end encrypted email system integrating semantic search for enhanced privacy and discoverability.
+    \item Developed secure WebAuthn and FIDO2-based authentication solutions.
+\end{itemize}
+
+\textbf{Senior Software Engineer} \hfill Various Companies\\
+\textit{Azumio, Cocoon Cam, Chrysalis Cloud} \hfill Jan. 2014 ---- Jan. 2025
+\begin{itemize}
+    \item Built and deployed Calorie Mama, achieving best-in-class accuracy (88\%) in food image recognition, integrated into Samsung Bixby.
+    \item Engineered backend infrastructure achieving 50 req/s throughput for Calorie Mama API.
+    \item Developed Chrysalis Cloud framework managing ML infrastructure, achieving 60x cost efficiency over AWS Kinesis, processing 15+ PB monthly.
+    \item Key contributor to Cocoon Cam backend, leading to acquisition by Alarm.com, generating millions in revenue and high user retention.
+\end{itemize}
+
+\section*{Notable Projects}
+\textbf{Mailio - Secure Email Platform}
+\begin{itemize}
+    \item Introduced "Handshakes", cryptographic contracts for trust-based communication, eliminating spam and phishing risks.\href{https://mail.io}{ (Mailio Website)}
+\end{itemize}
+
+\textbf{Calorie Mama - Food Recognition API}
+\begin{itemize}
+    \item Best-performing deep CNN model for food recognition (2021). \href{https://www.mdpi.com/2072-6643/13/11/4132?type=check_update&version=2}{(Research Paper)}, integrated into Samsung Bixby.
+\end{itemize}
+
+\textbf{Chrysalis Cloud - Video Edge AI Proxy}
+\begin{itemize}
+    \item Optimized real-time intelligence processing, achieving significant cost savings compared to traditional AWS solutions. \href{https://github.com/igorrendulic/video-edge-ai-proxy}{(GitHub)}, \href{https://www.youtube.com/watch?v=bWCgTW2Ar5s}{(Demo Video)}
+\end{itemize}
+
+\textbf{Cocoon Cam}
+\begin{itemize}
+    \item AI-powered baby monitor backend development, significant market success. \href{https://www.cnbc.com/2018/06/13/cocoon-cam-review-a-smart-baby-monitor-that-detects-breathing.html}{(CNBC Review)}
+\end{itemize}
+
+\section*{Achievements}
+\begin{itemize}
+    \item Proposed groundbreaking proxy-based HL7 document exchange solution, becoming a national standard in Slovenia.
+    \item Published multiple research papers and contributed to impactful open-source projects.
+\end{itemize}
+
+\section*{Education}
+\textbf{Master's in Computer Science} \hfill 2005\\
+University of Maribor, Slovenia\\
+Specialization: Information Extraction and Envelope Induction
+
+\section*{Certifications}
+\begin{itemize}
+    \item Java Certification
+\end{itemize}
+
+\end{document}
